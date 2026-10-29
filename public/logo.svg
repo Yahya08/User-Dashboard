@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5755FF" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+  <!-- Background Kotak Rounded Bergradasi -->
+  <rect width="64" height="64" rx="16" fill="url(#grad)" />
+  
+  <!-- Ikon User -->
+  <path stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5" d="M32 16a8 8 0 100 16 8 8 0 000-16zM18 48c0-7.7 6.3-14 14-14s14 6.3 14 14" />
+</svg>

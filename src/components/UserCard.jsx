@@ -1,20 +1,21 @@
 import { memo } from "react";
-import { Mail, Phone, Building2, ArrowRight, MoreVertical } from "lucide-react";
+import { Mail, Phone, Building2, ArrowRight } from "lucide-react";
 import { avatarColor, initials } from "./avatar";
 
-function UserCard({ user, active, onSelect }) {
+function UserCard({ user, active, onSelect, index = 0 }) {
   if (!user) return null;
 
   return (
     <div
-      className={`relative rounded-3xl p-5 transition-all duration-300 font-['Plus_Jakarta_Sans',sans-serif] ${
+      style={{
+        animationDelay: `${index * 60}ms`, // Efek bertahap tiap kartu
+      }}
+      className={`animate-data-enter relative rounded-3xl p-5 transition-all duration-300 font-['Plus_Jakarta_Sans',sans-serif] ${
         active
           ? "bg-white dark:bg-slate-800 border-2 border-indigo-500 ring-4 ring-indigo-500/10 shadow-lg shadow-indigo-500/10"
           : "bg-white dark:bg-slate-800/90 border border-slate-100 dark:border-slate-700/60 hover:border-indigo-200 dark:hover:border-indigo-500/40 hover:shadow-md"
       }`}
     >
-      
-
       {/* Profil Pengguna: Avatar + Detail Kontak */}
       <div className="flex items-start gap-4">
         <div
@@ -39,7 +40,7 @@ function UserCard({ user, active, onSelect }) {
         </div>
       </div>
 
-      {/* Bagian Perusahaan (Sejajar Presisi dengan Teks Kontak) */}
+      {/* Bagian Perusahaan */}
       <div className="mt-4 flex items-center gap-3 ml-[72px]">
         <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-50 dark:bg-indigo-950/50 text-indigo-500 dark:text-indigo-400 shrink-0">
           <Building2 className="h-4 w-4" />
@@ -54,8 +55,7 @@ function UserCard({ user, active, onSelect }) {
         </div>
       </div>
 
-      {/* Tombol Lihat Detail (Hover Biru Solid + Kursor Hand) */}
-      {/* Tombol Opsi Titik Tiga */}
+      {/* Tombol Lihat Detail */}
       <button
         onClick={() => onSelect(user)}
         className={`mt-6 flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl py-3 text-xs font-bold transition-all duration-300 ${

@@ -1,6 +1,11 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Pagination({ page, totalPages, onChange }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [page]);
+
   // Logika pembatasan halaman
   const getVisiblePages = (current, total) => {
     if (total <= 6) return Array.from({ length: total }, (_, i) => i + 1);
