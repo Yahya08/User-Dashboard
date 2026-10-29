@@ -88,5 +88,3 @@ Jika lag masih terasa dengan 10.000 data, langkah berikutnya:
 - **Menyiapkan indeks pencarian** satu kali saat data dimuat (misalnya menyimpan `name` dan `email` dalam huruf kecil), agar `toLowerCase()` tidak dipanggil ulang untuk 10.000 data di setiap pencarian.
 - **Web Worker** bila proses filter sendiri sudah terlalu berat bagi main thread.
 - **Pencarian dan pagination di sisi server** bila data terus bertambah, karena mengirim semua data ke browser tidak akan efisien.
-
----

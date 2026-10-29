@@ -170,10 +170,6 @@ export default function App() {
                     </div>
                   ))}
                 </div>
-
-                {/* Judul Area Data Pengguna */}
-                
-
                 {filtered.length === 0 ? (
                   <div className="mt-4 rounded-3xl border border-dashed border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-sm p-12 text-center text-sm text-slate-500">
                     Tidak ada pengguna yang cocok dengan pencarianmu.

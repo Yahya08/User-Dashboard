@@ -45,7 +45,6 @@ export default function UserDetailPanel({ user, onClose }) {
             </div>
           </div>
         </div>
-        {/* Tombol X - Ditambah cursor-pointer */}
         <button onClick={onClose} className="cursor-pointer rounded-full bg-slate-50 dark:bg-slate-800 p-2 text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-600 transition-colors">
           <X className="h-5 w-5" />
         </button>
@@ -68,7 +67,7 @@ export default function UserDetailPanel({ user, onClose }) {
         ))}
       </div>
 
-      {/* Tab Contents - Tanpa Scrollbar */}
+      {/* Tab Contents*/}
       <div className="mt-6">
         {tab === "Informasi Pribadi" && (
           <div className="animate-in fade-in slide-in-from-right-4 duration-300">
@@ -106,8 +105,6 @@ export default function UserDetailPanel({ user, onClose }) {
           </div>
         )}
       </div>
-
-      {/* Tombol Tutup bawah - Ditambah cursor-pointer */}
       <button
         onClick={onClose}
         className="cursor-pointer mt-6 w-full rounded-xl bg-[#F4F6FF] dark:bg-indigo-900/30 py-3 text-xs font-bold text-indigo-600 dark:text-indigo-400 transition-all duration-300 hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600"
