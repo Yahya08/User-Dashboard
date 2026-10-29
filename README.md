@@ -2,7 +2,9 @@
 
 Aplikasi Single Page Application (SPA) sederhana untuk menampilkan dan menjelajahi data pengguna dari [JSONPlaceholder](https://jsonplaceholder.typicode.com/users). Dibuat dengan React + Vite dan TailwindCSS, seluruh komponen UI dibuat sendiri tanpa template dashboard.
 
-**Demo:** https://user-dashboard-seven-sigma.vercel.app/
+**Demo:** https://user-dashboard-nine-mauve.vercel.app/
+**Github:** https://github.com/Yahya08/User-Dashboard.git 
+
 ## Fitur
 
 - Daftar pengguna dalam bentuk grid card dengan pagination
